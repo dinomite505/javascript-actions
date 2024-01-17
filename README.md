@@ -15,3 +15,10 @@ This action prints "Hello from JavaScript Action" or "Hello" and the name of a p
 
 This is the time we greeted you.
 
+## Example Usage
+
+```yaml
+uses: actions/hello-world-javascript-action@34287feC853vk537728g
+with: 
+  who-to-greet: 'Dino the Greatest'
+```
