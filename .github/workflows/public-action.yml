@@ -1,5 +1,8 @@
 # Example using a public action
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   hello_world_job:
@@ -11,8 +14,5 @@ jobs:
         uses: dinomite505/javascript-actions@v1.1
         with:
           who-to-greet: 'Dino The Greatest'
-      # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
-
-# Example using a private action
